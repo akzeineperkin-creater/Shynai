@@ -218,24 +218,24 @@ export default function ShynAiLanding() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button
-                  size="lg"
-                  className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
-                  onClick={() => document.getElementById('demo-simulator')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Установить Chrome-расширение
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="font-semibold bg-zinc-950/60 border-zinc-800 text-zinc-300 hover:text-white w-full sm:w-auto"
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Исследование CustDev & Данные
-                </Button>
-              </div>
+<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+  <Button
+    size="lg"
+    className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
+    onClick={() => window.open('chrome://extensions/', '_blank', 'noopener,noreferrer')}
+  >
+    <Download className="mr-2 h-5 w-5" />
+    Установить Chrome-расширение
+  </Button>
+  <Button
+    variant="outline"
+    size="lg"
+    className="font-semibold bg-zinc-950/60 border-zinc-800 text-zinc-300 hover:text-white w-full sm:w-auto"
+    onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+  >
+    Исследование CustDev & Данные
+  </Button>
+</div>
 
               {/* Key Trust Highlights */}
               <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto pt-8 border-t border-zinc-800/60">
