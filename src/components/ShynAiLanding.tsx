@@ -636,7 +636,7 @@ export default function ShynAiLanding() {
               <div className="h-8 w-8 rounded-lg bg-zinc-900 text-zinc-300 font-mono text-xs flex items-center justify-center mx-auto mb-3 border border-zinc-800">
                 04
               </div>
-              <h4 className="font-bold text-sm text-white">GPT-5.6 Luna</h4>
+              <h4 className="font-bold text-sm text-white">GPT-5.6 Terra</h4>
               <p className="text-xs text-zinc-500">Анализ в закрытом локальном контексте</p>
             </div>
 
