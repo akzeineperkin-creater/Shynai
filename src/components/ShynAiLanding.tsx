@@ -251,9 +251,7 @@ export default function ShynAiLanding() {
             {/* Left Column: Context */}
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-zinc-400 bg-zinc-900 px-3 py-1 rounded-md border border-zinc-800">
-                <AlertTriangle className="h-3.5 w-3.5 text-amber-400" />
-                <span>Проблема медиарынка Казахстана</span>
-              </div>
+
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
                 Одна неопределенная цифра превращает скорость в риск для доверия
               </h2>
