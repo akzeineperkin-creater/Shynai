@@ -222,7 +222,7 @@ export default function ShynAiLanding() {
   <Button
     size="lg"
     className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
-    onClick={() => window.open('chrome://extensions/', '_blank', 'noopener,noreferrer')}
+    onClick={() => window.open('chrome://extensions/', '_blank')}
   >
     <Download className="mr-2 h-5 w-5" />
     Установить Chrome-расширение
