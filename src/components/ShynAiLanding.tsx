@@ -217,12 +217,12 @@ export default function ShynAiLanding() {
                 </span>
               </div>
 
-              {/* CTA Buttons */}
+{/* CTA Buttons */}
 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
   <Button
     size="lg"
     className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
-    onClick={() => window.open('chrome://extensions/', '_blank')}
+    onClick={() => window.open('https://github.com/regullar/ShynAI', '_blank', 'noopener,noreferrer')}
   >
     <Download className="mr-2 h-5 w-5" />
     Установить Chrome-расширение
@@ -236,7 +236,6 @@ export default function ShynAiLanding() {
     Исследование CustDev & Данные
   </Button>
 </div>
-
               {/* Key Trust Highlights */}
               <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto pt-8 border-t border-zinc-800/60">
                 <div className="p-3 rounded-xl bg-zinc-950/40 border border-zinc-900">
