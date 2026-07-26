@@ -415,7 +415,7 @@ export default function ShynAiLanding() {
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-zinc-900 text-[11px] text-zinc-500 font-mono flex items-center justify-between">
-                <span>GPT-5.6 Luna AI</span>
+                <span>GPT-5.6 Terra AI</span>
                 <ShieldCheck className="h-3.5 w-3.5 text-zinc-500" />
               </div>
             </div>
