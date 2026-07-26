@@ -195,20 +195,6 @@ export default function ShynAiLanding() {
                 Умное Chrome-расширение для редакторов студенческих и региональных медиа Казахстана. Выделяйте факты в тексте и мгновенно получайте вердикт со стопроцентными цитатами из первоисточников.
               </p>
 
-              {/* Interactive Flow Indicator */}
-              <div className="mb-10 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl bg-zinc-950/80 border border-zinc-800/80 p-3 text-xs sm:text-sm text-zinc-300 backdrop-blur-xl">
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  1. Выделил утверждение
-                </span>
-                <ChevronRight className="h-4 w-4 text-zinc-600" />
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  2. Получил вердикт
-                </span>
-                <ChevronRight className="h-4 w-4 text-zinc-600" />
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  3. Открыл точную цитату
-                </span>
-              </div>
 
 {/* CTA Buttons */}
 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
