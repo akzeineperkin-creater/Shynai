@@ -181,13 +181,6 @@ export default function ShynAiLanding() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               
-              {/* Badge */}
-              <div className="mb-6 inline-flex items-center rounded-full bg-zinc-900/90 border border-zinc-800 px-4 py-1.5 text-xs text-zinc-300 backdrop-blur-md shadow-xl">
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2.5" />
-                <span className="font-mono text-zinc-400 uppercase tracking-wider text-[11px] mr-2">SHYNAI 2026</span>
-                <span className="text-zinc-600 mr-2">•</span>
-                <span>Creative Content & Media</span>
-              </div>
 
               {/* Main Headline */}
               <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.1]">
