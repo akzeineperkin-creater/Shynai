@@ -22,7 +22,8 @@ import {
   Quote,
   Clock,
   Lock,
-  Download
+  Download,
+  CreditCard
 } from "lucide-react"
 import { Beams, Button } from "./ui/ethereal-beams-hero"
 import ShynAiLogo from "./ShynAiLogo"
@@ -154,6 +155,9 @@ export default function ShynAiLanding() {
                 <a href="#metrics" className="rounded-full px-4 py-1.5 text-zinc-300 transition hover:bg-zinc-800 hover:text-white font-medium">
                   Метрики
                 </a>
+                <a href="#pricing" className="rounded-full px-4 py-1.5 text-zinc-300 transition hover:bg-zinc-800 hover:text-white font-medium">
+                  Тарифы
+                </a>
               </div>
 
               {/* Header Actions */}
@@ -181,6 +185,13 @@ export default function ShynAiLanding() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               
+              {/* Badge */}
+              <div className="mb-6 inline-flex items-center rounded-full bg-zinc-900/90 border border-zinc-800 px-4 py-1.5 text-xs text-zinc-300 backdrop-blur-md shadow-xl">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2.5" />
+                <span className="font-mono text-zinc-400 uppercase tracking-wider text-[11px] mr-2">SHYNAI 2026</span>
+                <span className="text-zinc-600 mr-2">•</span>
+                <span>Creative Content & Media</span>
+              </div>
 
               {/* Main Headline */}
               <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.1]">
@@ -195,26 +206,41 @@ export default function ShynAiLanding() {
                 Умное Chrome-расширение для редакторов студенческих и региональных медиа Казахстана. Выделяйте факты в тексте и мгновенно получайте вердикт со стопроцентными цитатами из первоисточников.
               </p>
 
+              {/* Interactive Flow Indicator */}
+              <div className="mb-10 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl bg-zinc-950/80 border border-zinc-800/80 p-3 text-xs sm:text-sm text-zinc-300 backdrop-blur-xl">
+                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
+                  1. Выделил утверждение
+                </span>
+                <ChevronRight className="h-4 w-4 text-zinc-600" />
+                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
+                  2. Получил вердикт
+                </span>
+                <ChevronRight className="h-4 w-4 text-zinc-600" />
+                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
+                  3. Открыл точную цитату
+                </span>
+              </div>
 
-{/* CTA Buttons */}
-<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-  <Button
-    size="lg"
-    className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
-    onClick={() => window.open('https://github.com/regullar/ShynAI', '_blank', 'noopener,noreferrer')}
-  >
-    <Download className="mr-2 h-5 w-5" />
-    Установить Chrome-расширение
-  </Button>
-  <Button
-    variant="outline"
-    size="lg"
-    className="font-semibold bg-zinc-950/60 border-zinc-800 text-zinc-300 hover:text-white w-full sm:w-auto"
-    onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-  >
-    Исследование CustDev & Данные
-  </Button>
-</div>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button
+                  size="lg"
+                  className="shadow-2xl shadow-white/20 font-semibold w-full sm:w-auto"
+                  onClick={() => document.getElementById('demo-simulator')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Установить Chrome-расширение
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="font-semibold bg-zinc-950/60 border-zinc-800 text-zinc-300 hover:text-white w-full sm:w-auto"
+                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Исследование CustDev & Данные
+                </Button>
+              </div>
+
               {/* Key Trust Highlights */}
               <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto pt-8 border-t border-zinc-800/60">
                 <div className="p-3 rounded-xl bg-zinc-950/40 border border-zinc-900">
@@ -614,7 +640,7 @@ export default function ShynAiLanding() {
               <div className="h-8 w-8 rounded-lg bg-zinc-900 text-zinc-300 font-mono text-xs flex items-center justify-center mx-auto mb-3 border border-zinc-800">
                 04
               </div>
-              <h4 className="font-bold text-sm text-white">GPT-5.6 Terra</h4>
+              <h4 className="font-bold text-sm text-white">GPT-5.6 Luna</h4>
               <p className="text-xs text-zinc-500">Анализ в закрытом локальном контексте</p>
             </div>
 
@@ -766,6 +792,172 @@ export default function ShynAiLanding() {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* SECTION 6: Pricing / Monetization Model */}
+      <section id="pricing" className="py-24 border-b border-zinc-800 bg-black">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-zinc-400 bg-zinc-900 px-3 py-1 rounded-md border border-zinc-800">
+              <CreditCard className="h-3.5 w-3.5 text-zinc-300" />
+              <span>Модель монетизации</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+              Тарифные планы для авторов и редакций
+            </h2>
+            <p className="text-zinc-400 text-base">
+              От MVP к 30-дневному пилоту в редакции: прозрачные гипотезы для студентов, региональных медиа и пресс-служб.
+            </p>
+          </div>
+
+          {/* Pricing Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+            
+            {/* Card 1: Individual */}
+            <div className="relative p-8 rounded-3xl bg-zinc-950 border border-zinc-800 flex flex-col justify-between hover:border-zinc-700 transition">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono uppercase tracking-wider text-zinc-400 bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">
+                    Individual
+                  </span>
+                </div>
+                <div className="mb-6">
+                  <div className="text-3xl font-black text-white font-mono">Бесплатно</div>
+                  <div className="text-xs text-zinc-500 mt-1">бесплатный лимит проверок</div>
+                </div>
+                <ul className="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 border-t border-zinc-900 pt-6">
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Для индивидуальных авторов и студентов</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Chrome-расширение для быстрой проверки</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Доступ к базовому двуязычному корпусу</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Мгновенный вывод первоисточников</span>
+                  </li>
+                </ul>
+              </div>
+              <Button
+                variant="outline"
+                className="w-full bg-zinc-900 border-zinc-800 text-zinc-300 hover:text-white"
+                onClick={() => document.getElementById('demo-simulator')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Попробовать демо
+              </Button>
+            </div>
+
+            {/* Card 2: Workspace (Popular Pilot) */}
+            <div className="relative p-8 rounded-3xl bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-emerald-500/50 flex flex-col justify-between shadow-2xl shadow-emerald-950/20">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-black text-[11px] font-bold font-mono px-3 py-0.5 rounded-full uppercase tracking-wider">
+                Пилот на 30 дней
+              </div>
+              <div>
+                <div className="flex items-center justify-between mb-4 mt-2">
+                  <span className="text-xs font-mono uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
+                    Workspace
+                  </span>
+                  <span className="text-[11px] font-mono text-zinc-400">3–5 пользователей</span>
+                </div>
+                <div className="mb-6">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-3xl font-black text-white font-mono">₸49–99 тыс.</span>
+                    <span className="text-xs text-zinc-400">/ мес.*</span>
+                  </div>
+                  <div className="text-[11px] text-zinc-500 italic mt-1">*Тарифная гипотеза для проверки в пилоте</div>
+                </div>
+                <ul className="space-y-3 text-xs sm:text-sm text-zinc-200 mb-8 border-t border-zinc-800 pt-6">
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Студенческие, региональные СМИ и пресс-службы</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>До 1 000 проверок в месяц</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>KPI: время до evidence & завершение проверки</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>100% полезность и валидность цитат</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Поддержка Sonar fallback поиска</span>
+                  </li>
+                </ul>
+              </div>
+              <Button
+                className="w-full bg-white text-black hover:bg-zinc-200 font-semibold shadow-lg"
+                onClick={() => document.getElementById('demo-simulator')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Начать пилот
+              </Button>
+            </div>
+
+            {/* Card 3: Enterprise / API */}
+            <div className="relative p-8 rounded-3xl bg-zinc-950 border border-zinc-800 flex flex-col justify-between hover:border-zinc-700 transition">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono uppercase tracking-wider text-zinc-400 bg-zinc-900 px-2.5 py-1 rounded-md border border-zinc-800">
+                    Enterprise / API
+                  </span>
+                </div>
+                <div className="mb-6">
+                  <div className="text-3xl font-black text-white font-mono">Custom</div>
+                  <div className="text-xs text-zinc-500 mt-1">после согласования SLA & privacy</div>
+                </div>
+                <ul className="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 border-t border-zinc-900 pt-6">
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Для крупных редакций и медиа-холдингов</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Прямой API доступ к модели ShynAI</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Кастомное расширение корпусов документов</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <span>Выделенный VPS, мониторинг и поддержка</span>
+                  </li>
+                </ul>
+              </div>
+              <Button
+                variant="outline"
+                className="w-full bg-zinc-900 border-zinc-800 text-zinc-300 hover:text-white"
+                onClick={() => window.open('https://github.com/regullar/ShynAI', '_blank')}
+              >
+                Связаться с нами
+              </Button>
+            </div>
+
+          </div>
+
+          {/* Cost structure pill */}
+          <div className="mt-12 max-w-4xl mx-auto p-4 rounded-2xl bg-zinc-900/40 border border-zinc-800 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+            <span className="text-zinc-500">Структура затрат:</span>
+            <div className="flex flex-wrap gap-4 text-zinc-300">
+              <span>• LLM + embeddings</span>
+              <span>• Sonar fallback</span>
+              <span>• VPS + monitoring</span>
+              <span>• corpus + support</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
