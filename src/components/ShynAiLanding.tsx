@@ -185,13 +185,7 @@ export default function ShynAiLanding() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               
-              {/* Badge */}
-              <div className="mb-6 inline-flex items-center rounded-full bg-zinc-900/90 border border-zinc-800 px-4 py-1.5 text-xs text-zinc-300 backdrop-blur-md shadow-xl">
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2.5" />
-                <span className="font-mono text-zinc-400 uppercase tracking-wider text-[11px] mr-2">SHYNAI 2026</span>
-                <span className="text-zinc-600 mr-2">•</span>
-                <span>Creative Content & Media</span>
-              </div>
+            
 
               {/* Main Headline */}
               <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.1]">
@@ -206,20 +200,7 @@ export default function ShynAiLanding() {
                 Умное Chrome-расширение для редакторов студенческих и региональных медиа Казахстана. Выделяйте факты в тексте и мгновенно получайте вердикт со стопроцентными цитатами из первоисточников.
               </p>
 
-              {/* Interactive Flow Indicator */}
-              <div className="mb-10 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl bg-zinc-950/80 border border-zinc-800/80 p-3 text-xs sm:text-sm text-zinc-300 backdrop-blur-xl">
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  1. Выделил утверждение
-                </span>
-                <ChevronRight className="h-4 w-4 text-zinc-600" />
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  2. Получил вердикт
-                </span>
-                <ChevronRight className="h-4 w-4 text-zinc-600" />
-                <span className="flex items-center font-medium text-white px-2 py-1 bg-zinc-800/80 rounded-lg">
-                  3. Открыл точную цитату
-                </span>
-              </div>
+              
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
