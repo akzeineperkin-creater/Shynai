@@ -621,7 +621,7 @@ export default function ShynAiLanding() {
               <div className="h-8 w-8 rounded-lg bg-zinc-900 text-zinc-300 font-mono text-xs flex items-center justify-center mx-auto mb-3 border border-zinc-800">
                 04
               </div>
-              <h4 className="font-bold text-sm text-white">GPT-5.6 Luna</h4>
+              <h4 className="font-bold text-sm text-white">GPT-5.6 Terra</h4>
               <p className="text-xs text-zinc-500">Анализ в закрытом локальном контексте</p>
             </div>
 
@@ -918,15 +918,12 @@ export default function ShynAiLanding() {
                 </ul>
               </div>
               <Button
-                variant="outline"
-                className="w-full bg-zinc-900 border-zinc-800 text-zinc-300 hover:text-white"
-                onClick={() => window.open('https://github.com/regullar/ShynAI', '_blank')}
-              >
-                Связаться с нами
-              </Button>
-            </div>
-
-          </div>
+  variant="outline"
+  className="w-full bg-zinc-900 border-zinc-800 text-zinc-300 hover:text-white"
+  onClick={() => window.open('https://t.me/akzidula', '_blank')}
+>
+  Связаться с нами
+</Button>
 
           {/* Cost structure pill */}
           <div className="mt-12 max-w-4xl mx-auto p-4 rounded-2xl bg-zinc-900/40 border border-zinc-800 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
